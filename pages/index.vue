@@ -1,22 +1,27 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
       <h1 class="title">
-        pwa
+        PWA y Nuxt.js
       </h1>
+      <app-logo/>
       <h2 class="subtitle">
-        This is a PWA experiment with NUXT
+        Esta web es una SSR PWA desarrollada con Nuxt.js para analizar el comportamiento de Google con distintos bloques de contenido y enlaces
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+      <app-content/>
+      <div class="static-content">
+        <p>En cambio, este es un bloque de contenido creado directamente en el template.</p>
+        <p>Y también vamos a crear dos enlaces:</p>
+        <div class="links">
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+            class="button--green">Página 3</a>
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            class="button--green">Página 4</a>
+        </div>
       </div>
     </div>
   </section>
@@ -24,10 +29,12 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import AppContent from '~/components/AppContent.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    AppContent
   }
 }
 </script>
@@ -48,17 +55,26 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  margin: 20px 100px;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
+  font-weight: 500;
+  font-size: 28px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+  margin: 20px 100px;
 }
 
 .links {
   padding-top: 15px;
+}
+
+.static-content{
+    font-size: 22px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
 }
 </style>

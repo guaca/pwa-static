@@ -3,14 +3,8 @@
     <p>En este bloque tenemos contenido que se ejecuta desde el componente <strong>AppContent</strong></p>
     <p>Y añadimos dos enlaces a subpáginas:</p>
     <div class="links">
-      <a
-        href="https://nuxtjs.org/"
-        target="_blank"
-        class="button--grey">Página 1</a>
-      <a
-        href="https://github.com/nuxt/nuxt.js"
-        target="_blank"
-        class="button--grey">Página 2</a>
+      <nuxt-link to="/page1" class="button--grey">Página 1</nuxt-link>
+      <nuxt-link to="/page2" class="button--grey">Página 2</nuxt-link>
     </div>
   </div>
 </template>

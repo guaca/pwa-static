@@ -13,14 +13,8 @@
         <p>En cambio, este es un bloque de contenido creado directamente en el template.</p>
         <p>Y también vamos a crear dos enlaces:</p>
         <div class="links">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            class="button--green">Página 3</a>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            class="button--green">Página 4</a>
+          <nuxt-link to="/page3" class="button--green">Página 3</nuxt-link>
+          <nuxt-link to="/page4" class="button--green">Página 4</nuxt-link>
         </div>
       </div>
     </div>
@@ -37,6 +31,7 @@ export default {
     AppContent
   }
 }
+
 </script>
 
 <style>

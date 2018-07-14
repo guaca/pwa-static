@@ -29,9 +29,8 @@ export default {
   components: {
     AppLogo,
     AppContent
-
+  }
 }
-
 </script>
 
 <style>

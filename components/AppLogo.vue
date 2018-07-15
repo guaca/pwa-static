@@ -1,8 +1,8 @@
 <template>
   <div class="PwaNuxtLogo">
-    <img class="nuxt-logo" src="~/assets/images/nuxt-logo.png">
-    <img class="plus-icon" src="~/assets/images/plus-icon.png">
-    <img class="pwa-logo" src="~/assets/images/pwa-logo.png">
+    <img class="nuxt-logo" src="~/assets/images/nuxt-logo.png" alt="nuxt logo">
+    <img class="plus-icon" src="~/assets/images/plus-icon.png" alt="plus icon">
+    <img class="pwa-logo" src="~/assets/images/pwa-logo.png" alt="pwa logo">
   </div>
 </template>
 

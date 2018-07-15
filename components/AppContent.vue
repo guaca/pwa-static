@@ -1,10 +1,10 @@
 <template>
   <div class="VueToNuxtContent">
-    <p>En este bloque tenemos contenido que se ejecuta desde el componente <strong>AppContent</strong></p>
-    <p>Y añadimos dos enlaces a subpáginas:</p>
+    <p>En este bloque tenemos contenido que se carga desde el componente <strong>AppContent</strong></p>
+    <p>Y añadimos dos enlaces a subpáginas a indexar y posicionar por keywords inventadas:</p>
     <div class="links">
-      <nuxt-link to="/page1" class="button--grey">Página 1</nuxt-link>
-      <nuxt-link to="/page2" class="button--grey">Página 2</nuxt-link>
+      <nuxt-link to="/requacifin" class="button--grey">Requacifin</nuxt-link>
+      <nuxt-link to="/kicalithno" class="button--grey">Kicalithno</nuxt-link>
     </div>
   </div>
 </template>
@@ -15,5 +15,6 @@
     color: #526488;
     word-spacing: 5px;
     padding-bottom: 15px;
+    margin: 0 20px;;
   }
 </style>

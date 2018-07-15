@@ -50,4 +50,62 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.title {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  display: block;
+  font-weight: 400;
+  font-size: 80px;
+  color: #35495e;
+  letter-spacing: 1px;
+  margin: 20px 100px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 28px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+  margin: 20px 100px;
+}
+
+.links {
+  padding-top: 15px;
+}
+
+.static-content{
+  font-size: 22px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+  margin: 0 20px;;
+}
+
+hr {
+    background-image: linear-gradient(20deg, #46B784, #5A21C5);
+    height: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 30px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin: 10px 30px;
+    font-weight: 500;
+
+  }
+}
+
 </style>

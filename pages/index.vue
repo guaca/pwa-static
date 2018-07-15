@@ -1,74 +1,50 @@
 <template>
   <section class="container">
     <div>
+      <nuxt-link to="/">
+        <app-logo/>
+      </nuxt-link>
+      <hr>
       <h1 class="title">
-        PWA y Nuxt.js
+        Cómo indexar una PWA y no morir en el intento
       </h1>
-      <app-logo/>
       <h2 class="subtitle">
         Esta web es una SSR PWA desarrollada con Nuxt.js para analizar el comportamiento de Google con distintos bloques de contenido y enlaces
       </h2>
       <app-content/>
       <div class="static-content">
-        <p>En cambio, este es un bloque de contenido creado directamente en el template.</p>
-        <p>Y también vamos a crear dos enlaces:</p>
+        <p>En cambio, este es un bloque de contenido creado directamente en la página <strong>index.vue</strong>.</p>
+        <p>Y también vamos a crear dos enlaces a otras dos páginas a posicionar por keywords inventadas:</p>
         <div class="links">
-          <nuxt-link to="/page3" class="button--green">Página 3</nuxt-link>
-          <nuxt-link to="/page4" class="button--green">Página 4</nuxt-link>
+          <nuxt-link to="/adjuriblat" class="button--green">Adjuriblat</nuxt-link>
+          <nuxt-link to="/wekilinest" class="button--green">Wekilinest</nuxt-link>
         </div>
       </div>
     </div>
+    <app-footer/>
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
 import AppContent from '~/components/AppContent.vue'
+import AppFooter from '~/components/AppFooter.vue'
 
 export default {
   components: {
     AppLogo,
-    AppContent
+    AppContent,
+    AppFooter
+  },
+  head () {
+      return {
+        title: 'Cómo indexar una PWA y no morir en el intento',
+        meta: [
+          { hid: 'description', name: 'description', content: 'Esta es una PWA desarrollada con Nuxt.js para comprobar el comportamiento de Google con este tipo de páginas' },
+          { hid: 'og:title', name: 'og:title', content: 'Esta es una PWA desarrollada con Nuxt.js para comprobar el comportamiento de Google con este tipo de páginas' },
+          { hid: 'og:description', name: 'og:description', content: 'Esta es una PWA desarrollada con Nuxt.js para comprobar el comportamiento de Google con este tipo de páginas' }
+        ]
+      }
+    }
   }
-}
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-  margin: 20px 100px;
-}
-
-.subtitle {
-  font-weight: 500;
-  font-size: 28px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-  margin: 20px 100px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-.static-content{
-    font-size: 22px;
-    color: #526488;
-    word-spacing: 5px;
-    padding-bottom: 15px;
-}
-</style>

@@ -20,7 +20,7 @@
   </section>
 </template>
 
-<script>
+<script type="text/javascript">
 import AppLogo from '~/components/AppLogo.vue'
 import AppFooter from '~/components/AppFooter.vue'
 
@@ -28,6 +28,16 @@ export default {
   components: {
     AppLogo,
     AppFooter
-  }
+  },
+  head () {
+      return {
+        title: 'Kicalithno',
+        meta: [
+          { hid: 'description', name: 'description', content: 'En esta página trabajamos la keyword inventada Kicalithno para comprobar la indexación de contenidos en buscadores de una SSR PWA.' },
+          { hid: 'og:title', name: 'og:title', content: 'Kicalithno' },
+          { hid: 'og:description', name: 'og:description', content: 'En esta página trabajamos la keyword inventada Kicalithno para comprobar la indexación de contenidos en buscadores de una SSR PWA.' }
+        ]
+      }
+    }
 }
 </script>

@@ -14,13 +14,15 @@
       <app-content/>
       <div class="static-content">
         <p>Actualmente no existe ningún resultado en Google para la keyword <strong>Requacifin</strong>, así que el objetivo será no solo indexar esta página si no que aparezca en resultados de búsqueda.</p>
+        <p>Desde esta página, vamos a enlazar a otra subpágina a indexar y posicionar por otra keyword inventada:</p>
+          <nuxt-link to="/wekilinest" class="button--green">Wekilinest</nuxt-link>
       </div>
     </div>
     <app-footer/>
   </section>
 </template>
 
-<script>
+<script type="text/javascript">
 import AppLogo from '~/components/AppLogo.vue'
 import AppFooter from '~/components/AppFooter.vue'
 
@@ -28,6 +30,16 @@ export default {
   components: {
     AppLogo,
     AppFooter
-  }
+  },
+  head () {
+      return {
+        title: 'Requacifin',
+        meta: [
+          { hid: 'description', name: 'description', content: 'En esta página trabajamos la keyword inventada Requacifin para comprobar la indexación de contenidos en buscadores de una SSR PWA.' },
+          { hid: 'og:title', name: 'og:title', content: 'Requacifin' },
+          { hid: 'og:description', name: 'og:description', content: 'En esta página trabajamos la keyword inventada Requacifin para comprobar la indexación de contenidos en buscadores de una SSR PWA.' }
+        ]
+      }
+    }
 }
 </script>

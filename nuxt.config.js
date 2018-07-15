@@ -27,7 +27,7 @@ module.exports = {
     short_name: 'NUXT PWA',
     description: 'PWA desarrollada con Nuxt.js + pwa-module para analizar comportamiento de Google con las distintas páginas y enlaces',
     lang: 'es',
-    start_url: '.',
+    start_url: '/',
     theme_color: '#46B784',
     background_color: '#46B784'
 },

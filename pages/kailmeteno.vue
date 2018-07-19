@@ -14,6 +14,10 @@
       <app-content/>
       <div class="static-content">
         <p>Actualmente no existe ningún resultado en Google para la keyword <strong>Kailmeteno</strong>, así que el objetivo será no solo indexar esta página si no que aparezca en resultados de búsqueda.</p>
+        <p>El jueves 19 de julio abrimos el robots.txt para que los bots rastreen e indexen este subdominio. ¿Cuánto tardará Google en indexar esta página generada en modo estático?</p>
+        <p>Los primeros resultados los veremos el próximo viernes 27 de julio en el SEOPLUS ;)</p>
+        <p>Recuerda que puedes ver las distintas versiones de este experimento desde https://pwaexperiments.com</p>
+
       </div>
     </div>
     <app-footer/>

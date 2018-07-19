@@ -16,4 +16,11 @@
    padding-bottom: 15px;
    margin: 0 20px;
   }
+  @media screen and (max-width: 992px) {
+    .NuxtContent {
+      font-size: 18px;
+    }
+  }
+
+
 </style>

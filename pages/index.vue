@@ -13,7 +13,7 @@
       </h2>
       <app-content/>
       <div class="static-content">
-        <p>De igual modo, también tenemos un bloque de contenido creado directamente en la página <strong>index.vue</strong>.</p>
+        <p>Además, también tenemos un bloque de contenido creado directamente en la página <strong>index.vue</strong>.</p>
         <p>Y también vamos a crear un enlace a otra página a indexar y posicionar por una keyword inventada:</p>
         <div class="links">
           <nuxt-link to="/rehordleca" class="button--green">Rehordleca</nuxt-link>

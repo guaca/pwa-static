@@ -11,7 +11,6 @@
       <h2 class="subtitle">
         Esta página vamos a indexarla e intentar posicionarla para la keyword inventada Hymnicatoc
       </h2>
-      <app-content/>
       <div class="static-content">
         <p>Actualmente no existe ningún resultado en Google para la keyword <strong>Hymnicatoc</strong>, así que el objetivo será no solo indexar esta página si no que aparezca en resultados de búsqueda.</p>
         <p>El 19 de julio de 2018 permitimos a los bots que rastreen e indexen este subdominio. ¿Cuánto tardará Google en indexar esta página generada en modo estático?</p>
@@ -34,11 +33,11 @@ export default {
   },
   head () {
       return {
-        title: 'Hymnicatoc',
+        title: 'Hymnicatoc - Static PWA',
         meta: [
-          { hid: 'description', name: 'description', content: 'En esta página trabajamos la keyword inventada Hymnicatoc para comprobar la indexación de contenidos en buscadores de una SSR PWA.' },
-          { hid: 'og:title', name: 'og:title', content: 'Hymnicatoc' },
-          { hid: 'og:description', name: 'og:description', content: 'En esta página trabajamos la keyword inventada Hymnicatoc para comprobar la indexación de contenidos en buscadores de una SSR PWA.' }
+          { hid: 'description', name: 'description', content: 'En esta página trabajamos la keyword inventada Hymnicatoc para comprobar la indexación de contenidos en buscadores de una Static PWA.' },
+          { hid: 'og:title', name: 'og:title', content: 'Hymnicatoc - Static PWA' },
+          { hid: 'og:description', name: 'og:description', content: 'En esta página trabajamos la keyword inventada Hymnicatoc para comprobar la indexación de contenidos en buscadores de una Static PWA.' }
         ]
       }
     }

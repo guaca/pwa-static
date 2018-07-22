@@ -37,10 +37,10 @@ export default {
   },
   head () {
       return {
-        title: 'Cómo indexar una PWA y no morir en el intento',
+        title: 'Cómo indexar una Static PWA y no morir en el intento',
         meta: [
           { hid: 'description', name: 'description', content: 'Esta es una PWA desarrollada con Nuxt.js como contenido estático para comprobar el comportamiento de Google con este tipo de páginas' },
-          { hid: 'og:title', name: 'og:title', content: 'Cómo indexar una PWA y no morir en el intento' },
+          { hid: 'og:title', name: 'og:title', content: 'Cómo indexar una Static PWA y no morir en el intento' },
           { hid: 'og:description', name: 'og:description', content: 'Esta es una PWA desarrollada con Nuxt.js como contenido estático para comprobar el comportamiento de Google con este tipo de páginas' }
         ]
       }
